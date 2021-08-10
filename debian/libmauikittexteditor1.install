@@ -1,2 +1,1 @@
-/usr/lib/*/libMauiKitTextEditor.so.1
-/usr/lib/*/libMauiKitTextEditor.so.2*
+/usr/lib/*/qt5/qml/org/mauikit/texteditor/libMauiKitTextEditor.so

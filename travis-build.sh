@@ -28,9 +28,9 @@ mk-build-deps -i -t "apt-get --yes" -r
 
 git clone --single-branch --branch v2.0 https://invent.kde.org/maui/mauikit-filebrowsing.git
 
-mv mauikit-imagetools/* .
+mv mauikit-texteditor/* .
 
-rm -rf mauikit-imagetools examples LICENSES README.md
+rm -rf mauikit-texteditor examples LICENSES README.md
 
 ### Build Deb
 

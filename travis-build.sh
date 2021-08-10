@@ -26,7 +26,7 @@ mk-build-deps -i -t "apt-get --yes" -r
 
 ### Clone repo.
 
-git clone --single-branch --branch v2.0 https://invent.kde.org/maui/mauikit-filebrowsing.git
+git clone --single-branch --branch v2.0 https://invent.kde.org/maui/mauikit-texteditor.git
 
 mv mauikit-texteditor/* .
 

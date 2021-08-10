@@ -1,4 +1,4 @@
-# MauiKit texteditor [![Build Status](https://travis-ci.org/Nitrux/mauikit-texteditor.svg?branch=main)](https://travis-ci.org/Nitrux/mauikit-texteditor)
+# MauiKit texteditor [![Build Status](https://travis-ci.org/Nitrux/mauikit-texteditor.svg?branch=arm64)](https://travis-ci.org/Nitrux/mauikit-texteditor)
 
 MauiKit-texteditor from Git master.
 

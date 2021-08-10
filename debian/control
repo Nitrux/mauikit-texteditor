@@ -1,0 +1,54 @@
+Source: mauikit-texteditor
+Section: kde
+Priority: optional
+Build-Depends: cmake,
+               debhelper,
+               extra-cmake-modules,
+               libkf5coreaddons-dev,
+               libkf5i18n-dev,
+               libkf5kio-dev,
+               mauikit-dev,
+               qtbase5-dev,
+               qtdeclarative5-dev
+Standards-Version: 4.2.1
+Homepage: https://mauikit.org/
+Vcs-Git: https://invent.kde.org/neon/neon-packaging/mauikit-texteditor.git
+Vcs-Browser: https://invent.kde.org/neon/neon-packaging/mauikit-texteditor
+Maintainer: Neon CI <neon@kde.org>
+
+Package: qml-module-org-mauikit-texteditor
+Architecture: any
+Depends: libmauikit,
+         libmauikittexteditor1,
+         qml-module-org-kde-kirigami2,
+         qml-module-org-kde-mauikit,
+         qml-module-qt-labs-settings,
+         qml-module-qtquick-controls2,
+         qml-module-qtquick-shapes,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Conflicts: qml-module-org-kde-mauikit-texteditor
+Replaces: qml-module-org-kde-mauikit-texteditor
+Description: MauiKit Text Editor components
+ MMauiKit Text Editor components.
+ .
+ This package contains the mauikit texteditor qml module.
+
+Package: libmauikittexteditor1
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: MauiKit Text Editor components
+ MMauiKit Text Editor components.
+ .
+ This package contains the mauikit texteditor library.
+
+Package: libmauikittexteditor-dev
+Architecture: any
+Depends: libmauikittexteditor1 (= ${binary:Version}),
+         qml-module-org-mauikit-texteditor,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: MauiKit Text Editor components
+ MMauiKit Text Editor components.
+ .
+ This package contains mauikit texteditor development files.

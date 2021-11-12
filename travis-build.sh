@@ -41,6 +41,7 @@ DEBIAN_FRONTEND=noninteractive apt -qq update
 DEBIAN_FRONTEND=noninteractive apt -qq -yy install --no-install-recommends \
 	mauikit-dev \
 	qtbase5-dev \
+	qtdeclarative5-dev \
 	libkf5syntaxhighlighting-dev
 
 DEBIAN_FRONTEND=noninteractive apt -qq -yy install --only-upgrade \

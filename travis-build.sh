@@ -103,8 +103,8 @@ checkinstall -D -y \
 	--pkgsource=mauikit-texteditor \
 	--pakdir=../.. \
 	--maintainer="Uri Herrera <uri_herrera@nxos.org>" \
-	--provides=libmauikittexteditor1,libmauikittexteditor-dev,qml-module-org-mauikit-texteditor \
-	--requires="libc6,libgcc-s1,libkf5i18n5,libkf5syntaxhighlighting5,libmauikit \(\>= 2.1.0\),libqt5core5a,libqt5gui5,libqt5qml5,libqt5quick5,libstdc++6,qml-module-org-kde-kirigami2,qml-module-org-kde-mauikit \(\>= 2.1.0\),qml-module-qt-labs-settings,qml-module-qtquick-controls2,qml-module-qtquick-shapes" \
+	--provides=mauikit-texteditor \
+	--requires="libc6,libgcc-s1,libkf5i18n5,libkf5syntaxhighlighting5,mauikit \(\>= 2.1.0\),libqt5core5a,libqt5gui5,libqt5qml5,libqt5quick5,libstdc++6,qml-module-org-kde-kirigami2,qml-module-qt-labs-settings,qml-module-qtquick-controls2,qml-module-qtquick-shapes" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \

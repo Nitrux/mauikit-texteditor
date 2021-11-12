@@ -39,12 +39,9 @@ DEBIAN_FRONTEND=noninteractive apt -qq update
 ### Texteditor needs ECM > 5.70
 
 DEBIAN_FRONTEND=noninteractive apt -qq -yy install --no-install-recommends \
-	libkf5coreaddons-dev \
-	libkf5i18n-dev \
-	libkf5kio-dev \
 	mauikit-dev \
 	qtbase5-dev \
-	qtdeclarative5-dev
+	libkf5syntaxhighlighting-dev
 
 DEBIAN_FRONTEND=noninteractive apt -qq -yy install --only-upgrade \
 	extra-cmake-modules

@@ -41,10 +41,10 @@ DEBIAN_FRONTEND=noninteractive apt -qq update
 DEBIAN_FRONTEND=noninteractive apt -qq -yy install --no-install-recommends \
 	libkf5coreaddons-dev \
 	libkf5i18n-dev \
+	libkf5syntaxhighlighting-dev \
 	mauikit \
 	qtbase5-dev \
-	qtdeclarative5-dev \
-	libkf5syntaxhighlighting-dev
+	qtdeclarative5-dev
 
 DEBIAN_FRONTEND=noninteractive apt -qq -yy install --only-upgrade \
 	extra-cmake-modules

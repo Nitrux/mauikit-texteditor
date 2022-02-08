@@ -42,7 +42,7 @@ DEBIAN_FRONTEND=noninteractive apt -qq -yy install --no-install-recommends \
 	libkf5coreaddons-dev \
 	libkf5i18n-dev \
 	libkf5syntaxhighlighting-dev \
-	mauikit \
+	mauikit-git \
 	qtbase5-dev \
 	qtdeclarative5-dev
 
@@ -51,7 +51,7 @@ DEBIAN_FRONTEND=noninteractive apt -qq -yy install --only-upgrade \
 
 ### Clone Repository
 
-git clone --depth 1 --branch v2.1 https://invent.kde.org/maui/mauikit-texteditor.git
+git clone --depth 1 --branch v2.1.1 https://invent.kde.org/maui/mauikit-texteditor.git
 
 rm -rf mauikit-texteditor/{examples,LICENSE,README.md}
 
@@ -94,8 +94,8 @@ make
 checkinstall -D -y \
 	--install=no \
 	--fstrans=yes \
-	--pkgname=mauikit-texteditor \
-	--pkgversion=2.1.0 \
+	--pkgname=mauikit-texteditor-git \
+	--pkgversion=2.1.1+git+2 \
 	--pkgarch=amd64 \
 	--pkgrelease="1" \
 	--pkglicense=LGPL-3 \
@@ -103,8 +103,8 @@ checkinstall -D -y \
 	--pkgsource=mauikit-texteditor \
 	--pakdir=../.. \
 	--maintainer=uri_herrera@nxos.org \
-	--provides=mauikit-texteditor \
-	--requires="libc6,libgcc-s1,libkf5i18n5,libkf5syntaxhighlighting5,mauikit \(\>= 2.1.0\),libqt5core5a,libqt5gui5,libqt5qml5,libqt5quick5,libstdc++6,qml-module-org-kde-kirigami2,qml-module-qt-labs-settings,qml-module-qtquick-controls2,qml-module-qtquick-shapes" \
+	--provides=mauikit-texteditor-git \
+	--requires="libc6,libgcc-s1,libkf5i18n5,libkf5syntaxhighlighting5,mauikit-git \(\>= 2.1.1+git\),libqt5core5a,libqt5gui5,libqt5qml5,libqt5quick5,libstdc++6,qml-module-org-kde-kirigami2,qml-module-qt-labs-settings,qml-module-qtquick-controls2,qml-module-qtquick-shapes" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \

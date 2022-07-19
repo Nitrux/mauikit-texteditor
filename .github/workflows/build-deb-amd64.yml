@@ -1,4 +1,4 @@
-name: MauiKit Accounts Deb
+name: MauiKit Texteditor Deb
 
 on:
   workflow_dispatch:

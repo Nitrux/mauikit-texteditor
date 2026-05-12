@@ -11,7 +11,7 @@ set -e
 
 # -- Download Source
 
-git clone --depth 1 --branch "$MAUIKIT_TEXTEDITOR_BRANCH" https://invent.kde.org/maui/mauikit-texteditor.git
+git clone --depth 1 --branch "$MAUIKIT_TEXTEDITOR_BRANCH" https://github.com/Nitrux/mauikit-texteditor-src.git
 
 rm -rf mauikit-texteditor/{examples,LICENSE,README.md}
 
